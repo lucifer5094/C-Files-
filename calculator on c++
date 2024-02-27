@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b;
+    char ch;
+    cout << "enter two numbers: ";
+    cin >> a >> b;
+    cout << "enter any operator(+,-,*,/,%) or 'q' to quit: ";
+    cin >> ch;
+
+    if (ch == 'q')
+    {
+        cout << "Exiting calculator. Goodbye!" << endl;
+        return 0;
+        ;
+    }
+    switch (ch)
+    {
+    case '+':
+        cout << "sum is: " << a + b;
+        break;
+    case '-':
+        cout << "difference is :" << a - b;
+        break;
+    case '*':
+        cout << "product is: " << a * b;
+        break;
+    case '/':
+        cout << "quotient is: " << a / b;
+        break;
+    default:
+        break;
+    }
+
+    return 0;
+}
